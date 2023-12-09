@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Poppins&family=Source+Serif+4:opsz@8..60&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section3 article div a, .section3 article .sec3_txt, .section3 article h3, .section2 p, .section2 h2, .section1 .sec1_content .sec1_link, .section1 .sec1_content .sec1_text, .section1 .sec1_content h1 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+header {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  padding: 0 5vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /*ссылки налево*/
+}
+header nav .logo {
+  flex: 1; /*лого направо*/
+}
+header nav .links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3vw;
+}
+header nav .links .info {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #3a5f56;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+}
+header nav .cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  border-radius: 6px;
+  background: #3a5f56;
+  width: 10%;
+  height: 60%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+header nav .cart img {
+  height: 60%;
+}
+header nav .cart a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 140% */
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 12vw;
+  }
+  header nav a {
+    display: none; /*убрала внутренние ссылки для телефона чтобы экран не выглядел загруженным*/
+  }
+}
+.section1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 6%;
+  padding-left: 10%;
+  padding-right: 5%;
+  background-color: #f4f3f0;
+}
+.section1 .sec1_content {
+  width: 40%;
+  height: 50%;
+  margin-top: 8%;
+  margin-right: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.section1 .sec1_content h1 {
+  color: #3a5f56;
+  font-size: 5vw;
+  margin-bottom: 5%;
+}
+.section1 .sec1_content .sec1_text {
+  color: #292c32;
+  font-family: Roboto;
+  font-size: 2vw;
+  margin-bottom: 5%;
+}
+.section1 .sec1_content .sec1_link {
+  border-radius: 6px;
+  background: #3a5f56;
+  width: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5vw;
+  font-style: normal;
+}
+.section1 img {
+  height: 100%;
+  width: 40%;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+.section2 img {
+  width: 15%;
+}
+.section2 h2 {
+  color: #3a5f56;
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 2%;
+}
+.section2 p {
+  width: 45%;
+  text-align: center;
+  color: #292c32;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.section3 {
+  padding-left: 6%;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2%;
+}
+.section3 article {
+  border-radius: 16px;
+  background: #f4f3f0;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.03);
+  background-color: #f4f3f0;
+  padding-top: 7%;
+  padding-left: 8%;
+  padding-bottom: 15%;
+  padding-right: 7%;
+}
+.section3 article .img {
+  width: 13%;
+  height: 16%;
+  border-radius: 24px;
+  background: rgba(58, 95, 86, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 article .img img {
+  text-align: center;
+  height: 80%;
+}
+.section3 article h3 {
+  color: #3a5f56;
+  font-size: 2vw;
+  font-style: normal;
+}
+.section3 article .sec3_txt {
+  font-size: 1.5vw;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.section3 article div a {
+  text-decoration: none;
+  color: #3a5f56;
+  font-size: 1.8vw;
+  font-style: normal;
+}/*# sourceMappingURL=style.css.map */
