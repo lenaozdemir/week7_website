@@ -130,6 +130,22 @@ header nav .cart a {
   border-radius: 24px;
 }
 
+@media screen and (max-width: 767px) {
+  .section1 {
+    padding-top: 3%;
+    padding-left: 5%;
+  }
+  .section1 .sec1_content {
+    margin-top: 0;
+  }
+  .section1 .sec1_content .sec1_text {
+    font-size: 3vw;
+  }
+  .section1 .sec1_content .sec1_link {
+    width: 30%;
+    font-size: 2vw;
+  }
+}
 .section2 {
   display: flex;
   flex-direction: column;
@@ -153,24 +169,36 @@ header nav .cart a {
   font-size: 1.5vw;
 }
 
+@media screen and (max-width: 767px) {
+  .section2 img {
+    display: none;
+  }
+}
 .section3 {
   padding-left: 6%;
   padding-right: 5%;
+  margin-bottom: 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 30%));
+  grid-template-rows: repeat(auto-fit, minmax(130px, 1fr));
+  /*первые article меньше других на экране телефона, не понимаю почему*/
   grid-gap: 2%;
   padding-bottom: 6%;
+}
+.section3 :last-child {
+  margin-bottom: 0;
 }
 .section3 article {
   border-radius: 16px;
   background: #f4f3f0;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.03);
-  background-color: #f4f3f0;
   padding-top: 7%;
   padding-left: 8%;
   padding-bottom: 15%;
   padding-right: 7%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
 }
 .section3 article .img {
   width: 13%;
@@ -186,12 +214,11 @@ header nav .cart a {
   height: 80%;
 }
 .section3 article h3 {
+  text-wrap: nowrap;
   color: #3a5f56;
   font-size: 2vw;
-  font-style: normal;
 }
 .section3 article .sec3_txt {
-  font-size: 1.5vw;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -202,6 +229,16 @@ header nav .cart a {
   font-style: normal;
 }
 
+@media screen and (min-width: 768px) {
+  .sec3_txt {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sec3_txt {
+    font-size: 2vw;
+  }
+}
 .section4 {
   background-color: #f4f3f0;
   padding-top: 2%;
@@ -215,7 +252,7 @@ header nav .cart a {
   padding-bottom: 2%;
 }
 .section4 h2 {
-  color: #db343b;
+  color: #3a5f56;
   text-align: center;
   font-family: Source Serif Pro;
   font-size: 2vw;
@@ -229,11 +266,7 @@ header nav .cart a {
 }
 .section4 .sec4_content {
   width: 80%;
-  display: flex;
   justify-content: space-around;
-}
-.section4 .sec4_content .packs {
-  width: 30%;
 }
 .section4 .sec4_content .packs img {
   width: 100%;
@@ -262,4 +295,24 @@ header nav .cart a {
   font-weight: 400;
   padding-top: 2%;
   padding-bottom: 8%;
+}
+
+@media screen and (min-width: 768px) {
+  .sec4_content {
+    display: flex;
+    flex-direction: row;
+  }
+  .sec4_content .packs {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sec4_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec4_content .packs {
+    width: 80%;
+  }
 }/*# sourceMappingURL=style.css.map */

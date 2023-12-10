@@ -52,3 +52,20 @@
     border-radius: 24px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .section1 {
+    padding-top: 3%;
+    padding-left: 5%;
+    .sec1_content {
+      margin-top: 0;
+      .sec1_text {
+        font-size: 3vw;
+      }
+      .sec1_link {
+        width: 30%;
+        font-size: 2vw;
+      }
+    }
+  }
+}
