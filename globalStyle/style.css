@@ -150,7 +150,6 @@ header nav .cart a {
   width: 45%;
   text-align: center;
   color: #292c32;
-  text-align: center;
   font-size: 1.5vw;
 }
 
@@ -161,6 +160,7 @@ header nav .cart a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2%;
+  padding-bottom: 6%;
 }
 .section3 article {
   border-radius: 16px;
@@ -200,4 +200,66 @@ header nav .cart a {
   color: #3a5f56;
   font-size: 1.8vw;
   font-style: normal;
+}
+
+.section4 {
+  background-color: #f4f3f0;
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.section4 img {
+  width: 15%;
+  padding-bottom: 2%;
+}
+.section4 h2 {
+  color: #db343b;
+  text-align: center;
+  font-family: Source Serif Pro;
+  font-size: 2vw;
+  font-weight: 400;
+  padding-bottom: 2%;
+}
+.section4 p {
+  width: 45%;
+  text-align: center;
+  padding-bottom: 6%;
+}
+.section4 .sec4_content {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.section4 .sec4_content .packs {
+  width: 30%;
+}
+.section4 .sec4_content .packs img {
+  width: 100%;
+}
+.section4 .sec4_content .packs h4 {
+  color: #3a5f56;
+  font-family: Source Serif Pro;
+  font-size: 1.5vw;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
+.section4 .sec4_content .packs p {
+  width: 100%;
+  color: #3a5f56;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-weight: 400;
+}
+.section4 a {
+  text-decoration: none;
+  color: #3a5f56;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-weight: 400;
+  padding-top: 2%;
+  padding-bottom: 8%;
 }/*# sourceMappingURL=style.css.map */
